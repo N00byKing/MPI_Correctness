@@ -1,0 +1,6 @@
+[submodule "MPI-CorrBench"]
+	path = MPI-CorrBench
+	url = https://github.com/N00byKing/MPI-CorrBench
+[submodule "MpiBugsInitiative"]
+	path = MpiBugsInitiative
+	url = git@github.com:N00byKing/MpiBugsInitiative
