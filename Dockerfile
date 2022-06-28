@@ -15,4 +15,8 @@ RUN apt-get update --fix-missing && apt-get -y -qq install autoconf automake aut
     apt-get autoremove -yq && \
     apt-get clean -yq
 
-COPY . /MBI
+COPY . /MPI_Correctness
+
+ENV MPI_CORRECTNESS_BM_DIR=/MPI_Correctness/MPI-CorrBench
+RUN mkdir /MPI_Correctness/MPI-CorrBench/experiment
+ENV MPI_CORRECTNESS_BM_EXPERIMENT_DIR=/MPI_Correctness/MPI-CorrBench/experiment
